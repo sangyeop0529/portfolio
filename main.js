@@ -65,6 +65,14 @@ workBtnContainer.addEventListener('click', e => {
   if (filter == null) {
     return;
   }
+  // Remove slection from the previous item and select the new one
+  const active = document. querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  //
+  const target = 
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected')
+
   // 애니메이션 생성
   projectContainer.classList.add('anim-out');
   

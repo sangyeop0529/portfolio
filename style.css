@@ -47,6 +47,12 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
 /* Typography */
 h1 {
@@ -104,4 +110,29 @@ p {
 }
 .navbar__menu__item:hover {
   background: var(--color-dark-pink);
+}
+
+#home {
+  background: url("./img/background.png") center / cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+.home__tit,
+.home__desc {
+  color: var(--color-white);
+}
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  color: var(--color-white);
 }

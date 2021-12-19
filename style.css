@@ -351,16 +351,16 @@ p {
   opacity: .8;
 }
 .project__desc h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 .project__desc h3::after {
   content: "";
   position: relative;
   left: 50%;
-  margin-left: -12.5px;
+  margin-left: -25px;
   margin-top: 8px;
   display: block;
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: var(--color-dark-white);
 }
@@ -451,15 +451,22 @@ p {
   .navbar__toggle-btn {
     display: block;
   }
+  #navbar.navbar__dark {
+    padding: 16px;
+  }
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-blue);
   }
   .navbar__menu {
     flex-direction: column;
     width: 100%;
     text-align: center;
     display: none;
+  }
+  .navbar__menu.open {
+    display: block;
   }
   .about__majors {
     flex-direction: column;

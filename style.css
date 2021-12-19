@@ -305,6 +305,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--ani-duration) ease-out;
+}
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 .project {
   position: relative;
@@ -315,6 +321,9 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+.project.invisible {
+  display: none;
 }
 .project__img {
   max-width: 100%;
@@ -411,6 +420,27 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* Arrow up */
+.arrow-up {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 50px;
+  right: 50px;
+  font-size: 50px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: 50%;
+  opacity: 0;
+  /* 클릭이 안되게 하는 방법 */
+  pointer-events: none;
+  transition: all var(--ani-duration) ease-in;
+}
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */

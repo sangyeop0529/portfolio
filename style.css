@@ -369,3 +369,27 @@ p {
 .testinoial__speech-bubble p a {
   color: var(--color-blue);
 }
+
+/* Contact */
+#contact {
+  background-color: var(--color-blue);
+}
+.contact__email,
+.contact__tit,
+.contact__rigths {
+  color: var(--color-white);
+}
+.contact__tit {
+  margin: 32px 0;
+}
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+.contact__links i {
+  transition: all var(--ani-duration) ease-in;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}

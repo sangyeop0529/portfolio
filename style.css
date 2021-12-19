@@ -97,6 +97,7 @@ p {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--ani-duration) ease-in-out;
+  z-index: 99;
 }
 .navbar__menu {
   display: flex;
